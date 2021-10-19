@@ -12,11 +12,13 @@ public class  Test2 {
 //        dog.say();
 //        cat.say();
           Person person = context.getBean("personBean", Person.class);
-          person.callYourPet();
+          //person.callYourPet();
+
+        System.out.println(person.getAge());
+        System.out.println(person.getSurname());
 
 
-
-        context.close();
+          context.close();
 
     }
 }
