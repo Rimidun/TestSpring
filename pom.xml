@@ -46,7 +46,17 @@
       <artifactId>spring-beans</artifactId>
       <version>5.2.17.RELEASE</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.9.7</version>
+    </dependency>
+
   </dependencies>
+
+
 
   <build>
     <finalName>TestSpring</finalName>
