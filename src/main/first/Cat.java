@@ -1,6 +1,5 @@
 package main.first;
 
-
 import org.springframework.stereotype.Component;
 
 @Component("catBean")
