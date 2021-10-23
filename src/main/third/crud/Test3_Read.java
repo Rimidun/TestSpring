@@ -19,14 +19,17 @@ public class Test3_Read {
             Session session = factory.getCurrentSession();
             session.beginTransaction(); //создание транзакции
 
-//            List<Employee> employees = session.createQuery("from Employee")
-//                    .getResultList();
+            List<Employee> employees = session.createQuery("from Employee")
+                    .getResultList();
 
-            List<Employee> employees = session.createQuery("from Employee " + "where name = 'Nikolay'" + "AND salary > 5").getResultList();
+//            List<Employee> employees = session.createQuery("from Employee " + "where name = 'Nikolay'" + "AND salary > 5").getResultList(); //Через hql
 
 
-            for (Employee e : employees)
-                System.out.println(e);
+
+
+
+//            for (Employee e : employees)
+//                System.out.println(e);
 
 
             session.getTransaction().commit();

@@ -20,6 +20,12 @@ public class Details {
     public Details() {
     }
 
+    public Details(String city, String phoneNumber, String email) {
+        this.city = city;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
     public int getId() {
         return id;
     }

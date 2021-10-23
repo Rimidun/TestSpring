@@ -17,6 +17,8 @@ public class Test4_Update {
 
         session.createQuery("update Employee " + "set salary = '1000' " + "where name = 'Andrey'").executeUpdate();
 
+
+
         session.getTransaction().commit();
 
 
