@@ -33,25 +33,28 @@ public class Main {
 
             /********************************** */ //add children and section
 
-//            Child child1 = new Child("Alex", 5);
-//            Section section1 = new Section("Dance");
-//            Section section2 = new Section("Race");
-//            Section section3 = new Section("Run");
+//            Child child1 = new Child("Anatoliy", 11);
+//            Section section1 = new Section("Music");
+//            Section section2 = new Section("Swimming");
+//            Section section3 = new Section("fight");
+//
+//
 //
 //            child1.addSectionToChild(section1);
 //            child1.addSectionToChild(section2);
 //            child1.addSectionToChild(section3);
 //
-//            session.save(child1);
+//            session.persist(child1);
+
 
             /********************************** */ //delete children
 
-            Child child = session.get(Child.class, 4);
-            session.delete(child);
-
-
-            session.getTransaction().commit();
-            System.out.println("DONE!");
+//            Child child = session.get(Child.class, 8);
+//            session.delete(child);
+//
+//
+//            session.getTransaction().commit();
+//            System.out.println("DONE!");
 
         } finally {
             session.close();
