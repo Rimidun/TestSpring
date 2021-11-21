@@ -14,7 +14,7 @@ public class Test5_Delete {
 
         Session session = factory.getCurrentSession(); // создание текущей сессии, на основе фабрики
         session.beginTransaction(); // начинаем транзакцию на основе сессии
-        Employee employee = session.get(Employee.class, 2);  // выбирем объект класса емплои с айди 7
+        Employee employee = session.get(Employee.class, 2);  // выбираем объект класса емплои с айди 2
         session.delete(employee); // удаляем этот объект с бд
         session.getTransaction().commit(); // заканчиваем транзакцию
 
